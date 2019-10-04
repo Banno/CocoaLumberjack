@@ -598,6 +598,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xcode/Lumberjack/CocoaLumberjack-Prefix.pch";
 				INFOPLIST_FILE = "$(SOURCE_ROOT)/Sources/$(TARGET_NAME)/Supporting Files/$(TARGET_NAME)-Info.plist";
+				MACH_O_TYPE = staticlib;
 			};
 			name = Debug;
 		};
@@ -609,6 +610,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xcode/Lumberjack/CocoaLumberjack-Prefix.pch";
 				INFOPLIST_FILE = "$(SOURCE_ROOT)/Sources/$(TARGET_NAME)/Supporting Files/$(TARGET_NAME)-Info.plist";
+				MACH_O_TYPE = staticlib;
 			};
 			name = Release;
 		};
@@ -619,6 +621,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SOURCE_ROOT)/Sources/$(TARGET_NAME)/Supporting Files/$(TARGET_NAME)-Info.plist";
+				MACH_O_TYPE = staticlib;
 			};
 			name = Debug;
 		};
@@ -629,6 +632,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SOURCE_ROOT)/Sources/$(TARGET_NAME)/Supporting Files/$(TARGET_NAME)-Info.plist";
+				MACH_O_TYPE = staticlib;
 			};
 			name = Release;
 		};
