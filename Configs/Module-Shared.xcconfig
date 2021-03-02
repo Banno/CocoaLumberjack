@@ -22,6 +22,8 @@ CLANG_CXX_LIBRARY = libc++
 // Enables the use of modules for system APIs. System headers are imported as semantic modules instead of raw headers.
 CLANG_ENABLE_MODULES = YES
 
+CLANG_ENABLE_MODULE_DEBUGGING = NO
+
 // Compiles reference-counted Objective-C code (when garbage collection is not enabled) to use Automatic Reference Counting.
 CLANG_ENABLE_OBJC_ARC = YES
 
@@ -196,6 +198,8 @@ LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/
 
 // This is a list of paths to folders to be searched by the linker for libraries used by the product. Paths are delimited by whitespace, so any paths with spaces in them need to be properly quoted.
 LIBRARY_SEARCH_PATHS = $(inherited)
+
+MACH_O_TYPE = staticlib
 
 // Code will load on this and later versions of macOS. Framework APIs that are unavailable in earlier versions will be weak-linked; your code should check for null function pointers or specific system versions before calling newer APIs.
 MACOSX_DEPLOYMENT_TARGET = 10.10
